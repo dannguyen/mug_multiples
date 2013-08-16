@@ -13,12 +13,11 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "mug_multiples"
   gem.homepage = "http://github.com/dannguyen/mug_multiples"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Crop out the faces from source images}
+  gem.description = %Q{A convenience wrapper around RMagick and ruby-opencv libraries}
   gem.email = "dansonguyen@gmail.com"
   gem.authors = ["Dan Nguyen"]
   # dependencies defined in Gemfile

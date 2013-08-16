@@ -1,16 +1,30 @@
-= mug_multiples
+= MugMultiples
 
-Description goes here.
+A wrapper around [ruby-opencv](https://github.com/ruby-opencv/ruby-opencv) and [rmagick](http://rmagick.rubyforge.org/) (which themselves are wrappers around [OpenCV](http://opencv.org/) and [ImageMagick](http://www.imagemagick.org) + [GraphicsMagick](http://www.graphicsmagick.org/)) for producing face-cropped images from a source image.
 
-== Contributing to mug_multiples
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+== Installation
+
+=== The ruby-opencv gem
+
+Loading the OpenCV library onto your system is probably the hardest part about using MugMultiples. 
+
+==== OS X
+
+If you're on a Mac, it's recommended that you use [Homebrew](http://brew.sh/). If you go that route, you'll also have to tap the [science formulae](https://github.com/Homebrew/homebrew-science)
+
+    brew tap homebrew/science
+    brew install opencv
+    gem install ruby-opencv -- --with-opencv-dir=/usr/local/Cellar/opencv
+
+
+=== RMagick
+
+Installing the rmagick gem is the second hardest part of this process. Check the installation instructions at [RMagick's homepage](http://rmagick.rubyforge.org/install-faq.html).
+
+
+
+
 
 == Copyright
 
