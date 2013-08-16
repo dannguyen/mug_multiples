@@ -11,9 +11,10 @@ module MugMultiples
 
     attr_reader :filename
     def initialize(fthing)
-      if fthing.kind_of?(OpenCV::CvAvgComp)
+      if fthing.kind_of?(OpenCV::CvMat)
         @cvimg = fthing
       else
+        ## new file
         @filename = fthing
       end
     end

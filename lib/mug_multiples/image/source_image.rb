@@ -6,7 +6,12 @@ module MugMultiples
     end
 
     def faces(opts={})
-      detect_faces(opts).map{|face| MugMultiples::Face.new(face) }          
+      detect_faces(opts).map{|face| 
+        # make a new CvMat object to pass to Face.new
+        face_cv = cv_image_object.sub_rect(face)
+
+        MugMultiples::Face.new(face) 
+      }          
     end
 
     def detect_faces(opts={})
