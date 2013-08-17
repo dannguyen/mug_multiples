@@ -26,6 +26,14 @@ module MugMultiples
     end
 
 
+    private
+
+    def spawn_image(cv_box, klass=self)
+      sub_box = cv_image_object.sub_rect(cv_box)
+
+      return klass.new(sub_box)
+    end
+
   end
 end
 
