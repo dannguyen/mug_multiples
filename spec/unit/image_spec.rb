@@ -14,7 +14,7 @@ describe MugMultiples::Image do
       end
 
       it 'should be fail if @filename doesnt exist' do 
-        expect{Image.new('somefile.jpg')}.to_raise ArgumentError
+        expect{Image.new('somefile.jpg')}.to raise_error ArgumentError
       end
 
       it 'should be able to load a proper #cv_image_object' do 

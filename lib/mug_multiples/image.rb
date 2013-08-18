@@ -16,6 +16,10 @@ module MugMultiples
       else
         ## new file
         @filename = fthing
+
+        unless File.exists?(@filename)
+          raise ArgumentError, "#{@filename} does not exist"
+        end 
       end
     end
 

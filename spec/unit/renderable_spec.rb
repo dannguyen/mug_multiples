@@ -19,6 +19,13 @@ describe 'MugMultiples::Renderable' do
     @image = MOCK_IMAGE
   end
 
-  
+  describe 'write to disk' do 
+    it 'should #write with filename argument'
+  end
+
+  describe 'effects' do 
+    it 'should create black and white image'
+    it 'should'
+  end
 
 end
